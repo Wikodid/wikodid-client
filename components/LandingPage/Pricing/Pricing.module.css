@@ -1,0 +1,260 @@
+.pricing {
+	padding: calc(60px + 2rem) 10% 3rem 10%;
+
+	min-height: 100vh;
+	width: 100%;
+}
+
+.text {
+	text-align: center;
+}
+
+.switch-container {
+	margin-top: 2.5rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* * In case I want the switch to be sticky */
+	/*
+    position: sticky;
+    top: 70px;
+    
+    margin: 0 -10%;
+    
+    width: 120%;
+    height: 60px;
+    
+    background-color: #fff;
+    */
+}
+
+.switch-container span {
+	margin: 0 1rem;
+}
+
+.switch,
+.toggle {
+	transition: 0.4s ease-out;
+}
+
+.switch {
+	position: relative;
+
+	border-radius: 1000px;
+
+	height: 30px;
+	width: 63px;
+
+	background-color: #c4c4c4;
+	cursor: pointer;
+}
+
+.switch::before,
+.switch::after {
+	position: absolute;
+	top: 50%;
+
+	transform: translateY(-50%);
+
+	transition: 0.4s ease-out;
+}
+
+.switch::before {
+	content: "Monthly";
+	left: calc(-100% - 1rem);
+
+	color: #000;
+}
+
+.switch::after {
+	content: "Yearly";
+	left: calc(100% + 1rem);
+
+	color: #c4c4c4;
+}
+
+.toggle {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+
+	border-radius: 50%;
+
+	height: 22px;
+	width: 22px;
+
+	background-color: #fff;
+
+	pointer-events: none;
+}
+
+/* Switch states */
+.toggle-on {
+	background-color: #5970e4;
+}
+
+.toggle-on .toggle {
+	left: 37px;
+}
+
+.toggle-on::before {
+	color: #c4c4c4;
+}
+
+.toggle-on::after {
+	color: #000;
+}
+
+/* Pricing Plans */
+.pricing-plans-container {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.plan {
+	position: relative;
+
+	margin-top: 5vh;
+	padding: 1rem;
+	border-radius: 20px;
+
+	min-height: 65vh;
+	width: 100%;
+
+	background-color: #fff3f3;
+}
+
+.plan-highlighted {
+	color: #fff;
+
+	background-color: #5970e4;
+}
+
+.plan .tag {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+
+	padding: 0.5rem;
+	border-radius: 10px;
+
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+
+	background-color: #3f3db7;
+}
+
+.plan h1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.plan .price {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.plan .deal {
+	margin: 2rem 0 1rem 0;
+
+	color: #707070;
+
+	display: block;
+}
+
+.plan .price .amount {
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+.plan .price .amount span {
+	color: #00819d;
+}
+
+.plan-highlighted .price .amount span {
+	color: #23d6fd;
+}
+
+.plan .price > span:not(.amount) {
+	color: #c0aaaa;
+}
+.plan-highlighted .price > span:not(.amount) {
+	color: #e5c8c8;
+}
+
+.plan .feature-list {
+	margin-top: 2rem;
+}
+
+.plan .feature-list li {
+	margin: 0.75rem 0.25rem;
+
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.plan .feature-list li .tick {
+	margin-right: 1rem;
+
+	user-select: none;
+	pointer-events: none;
+}
+
+.plan .feature-list p {
+	margin-bottom: 0;
+
+	color: #878787;
+}
+
+.plan-highlighted .feature-list p {
+	color: #d2d2d2;
+}
+
+/* .feature p[title="true"] {
+	text-decoration: dotted;
+} */
+
+.comparison {
+	margin: 1.75rem 0;
+
+	color: #878787;
+	text-align: center;
+
+	display: block;
+}
+
+.comparison:hover {
+	color: #3f3db7;
+}
+
+@media screen and (min-width: 769px) {
+	.pricing {
+		margin: auto;
+
+		min-height: unset;
+		height: 100vh;
+		width: 90%;
+	}
+
+	/* Pricing Plans */
+	.pricing-plans-container {
+		flex-direction: row;
+	}
+
+	.plan {
+		max-width: 320px;
+		min-height: 420px;
+	}
+}

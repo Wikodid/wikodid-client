@@ -1,0 +1,89 @@
+.item,
+.title h2,
+.title .svg,
+.details {
+	transition: 0.4s ease;
+}
+
+.item,
+.title {
+	border-radius: 8px;
+}
+
+.item {
+	margin: 0 auto 1.5rem auto;
+
+	max-width: 400px;
+
+	box-shadow: 0px 4px 80px 20px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+	padding: 1rem;
+
+	background-color: #fff;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	cursor: pointer;
+}
+
+.title h2 {
+	margin-right: 1ch;
+	margin-bottom: 0;
+
+	color: #747474;
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.title .svg {
+	margin-left: auto;
+}
+
+.details {
+	border-radius: 0 0 8px 8px;
+
+	max-height: 0;
+
+	overflow: hidden;
+}
+
+.details p {
+	padding: 1rem;
+}
+
+/* Active Accordion Item */
+.selected .title {
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.selected .title h2 {
+	color: #000;
+}
+
+.selected .title .svg {
+	transform: rotate(180deg);
+}
+
+.selected .details {
+	max-height: 999px;
+}
+
+@media screen and (min-width: 769px) {
+	.title:hover h2 {
+		color: #000;
+	}
+
+	.title h2 {
+		font-size: 1.5rem;
+	}
+
+	.title,
+	.details p {
+		padding: 1.5rem;
+	}
+}

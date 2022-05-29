@@ -1,0 +1,49 @@
+.about {
+	position: relative;
+
+	padding: 60px 10% 0 10%;
+
+	min-height: 100vh;
+	width: 100%;
+}
+
+.text {
+	padding: 2rem 0;
+}
+
+.animation-container {
+	width: 100%;
+}
+
+.animation {
+	max-width: 100%;
+
+	user-select: none;
+	pointer-events: none;
+}
+
+@media screen and (min-width: 769px) {
+	.about {
+		padding: 0 10%;
+
+		height: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.text,
+	.animation-container {
+		height: 100%;
+		width: 50%;
+	}
+
+	.text {
+		padding-right: 5rem;
+	}
+
+	.animation-container {
+		padding-left: 2rem;
+	}
+}

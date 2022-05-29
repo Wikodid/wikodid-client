@@ -1,0 +1,76 @@
+.hero {
+	position: relative;
+
+	margin-top: 70px;
+	padding: 5vh 10% 10vh 10%;
+
+	min-height: calc(100vh - 70px);
+	width: 100%;
+}
+
+.title {
+	font-size: 3.25rem;
+}
+
+.img-container,
+.img {
+	pointer-events: none;
+	user-select: none;
+}
+
+.img-container {
+	position: absolute;
+	top: calc(70px + 5vh);
+	right: 10%;
+
+	height: 60vh;
+	width: 55%;
+
+	z-index: -1;
+}
+
+.img {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: lightblue;
+
+	object-fit: contain;
+}
+
+.button {
+	padding: 0.5rem 1.5rem;
+	border-radius: 1000px;
+
+	color: #fff;
+	text-align: center;
+
+	background-color: blue;
+
+	transition: 0.4s ease-out;
+
+	display: inline-block;
+}
+
+.button:hover {
+	background-color: rgb(6, 6, 87);
+}
+
+@media screen and (min-width: 769px) {
+	.title {
+		margin-top: 6.5rem;
+
+		width: 60%;
+
+		font-size: 5.5rem;
+		line-height: 6.5rem;
+	}
+
+	.button {
+		margin-top: 1.5rem;
+	}
+}

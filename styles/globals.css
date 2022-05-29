@@ -1,16 +1,82 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+	/* font-size: clamp(2.5rem, 3rem, 3.5rem);
+	font-size: clamp(3.5rem, 4rem, 4.5rem); */
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+	line-height: 2rem;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+@media screen and (min-width: 769px) {
+	h1 {
+		font-size: 3.5rem;
+		line-height: 4.5rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+	}
+
+	h4 {
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+	}
 }

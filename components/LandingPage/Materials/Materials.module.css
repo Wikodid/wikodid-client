@@ -1,0 +1,151 @@
+.materials {
+	position: relative;
+
+	min-height: 100vh;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.content {
+	padding: 0 10%;
+}
+
+.materials-container {
+	margin-top: 4rem;
+
+	height: 50vh;
+	width: 100%;
+
+	background-color: rgb(2, 2, 37);
+
+	overflow: hidden;
+
+	display: flex;
+	align-items: center;
+}
+
+.materials-asset-container {
+	height: 100%;
+
+	display: flex;
+	align-self: flex-start;
+}
+
+.material-asset {
+	min-width: 100vw;
+	height: 80%;
+
+	align-self: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.material-asset-img {
+	max-height: 70%;
+}
+
+.material-asset-description {
+	margin-top: 2rem;
+
+	max-height: 30%;
+
+	color: #fff;
+	text-align: center;
+}
+
+.material-asset-name {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.material-swatches {
+	margin-top: 2.5rem;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 24px);
+	gap: 0.75rem;
+}
+
+.swatch {
+	position: relative;
+
+	border-radius: 50%;
+
+	height: 24px;
+	width: 24px;
+	/* height: 48px;
+	width: 48px; */
+
+	background-color: red;
+
+	cursor: pointer;
+}
+
+.swatch img {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	border-radius: 50%;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+.active {
+	transform: scale(1.2);
+
+	box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
+	-webkit-box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
+}
+
+@media screen and (min-width: 769px) {
+	.materials {
+		margin-bottom: 100px;
+
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.content {
+		margin-right: 10%;
+		padding: 10vh 0 10vh 10%;
+
+		width: 40%;
+	}
+
+	.materials-container {
+		margin-top: 0;
+
+		width: 50%;
+		height: 100vh;
+	}
+
+	.material-asset {
+		min-width: unset;
+		width: 50vw;
+	}
+
+	.material-swatches {
+		grid-template-columns: repeat(auto-fit, 32px);
+	}
+
+	.swatch {
+		height: 32px;
+		width: 32px;
+	}
+
+	.active {
+		transform: scale(1.1);
+	}
+}
