@@ -15,7 +15,11 @@ const Hero = () => {
 			</Link>
 
 			<div className={styles["img-container"]}>
-				<div className={styles.img}></div>
+				<img
+					src='/images/demos/hero-mockup.png'
+					alt='Mockup'
+					className={styles.img}
+				/>
 			</div>
 		</section>
 	);

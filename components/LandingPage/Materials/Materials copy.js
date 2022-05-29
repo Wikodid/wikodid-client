@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 import styles from "@/components/LandingPage/Materials/Materials.module.css";
@@ -83,17 +83,15 @@ const Materials = () => {
 	};
 
 	useEffect(() => {
-		const containerLeft = document
-			.querySelector(`.${styles["materials-asset-container"]}`)
-			.getBoundingClientRect().left;
-
 		document
 			.querySelectorAll(`.${styles["material-asset"]}`)
 			.forEach(
 				(material, index) =>
-					(materialCoordinates[index] =
-						material.getBoundingClientRect().left - containerLeft)
+					(materialCoordinates[index] = material.getBoundingClientRect().left)
 			);
+
+		// * For debugging
+		// console.log(materialCoordinates);
 	}, []);
 
 	return (
