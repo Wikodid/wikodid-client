@@ -25,13 +25,13 @@ export default function Home() {
 
 			<main className={styles.main} dir='ltr'>
 				<Hero />
-				{/* <AboutUs /> */}
+				<AboutUs />
 				<Materials />
-				{/* <Styles />
+				<Styles />
 				<Pricing />
 				<HowItWorks />
 				<Testimonials />
-				<ContactUs /> */}
+				<ContactUs />
 			</main>
 
 			<Footer />
