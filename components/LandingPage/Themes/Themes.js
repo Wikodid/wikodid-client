@@ -1,8 +1,8 @@
 import { useRef } from "react";
 
-import styles from "@/components/LandingPage/StylesSection/Styles.module.css";
+import styles from "@/components/LandingPage/Themes/Themes.module.css";
 
-const stylesList = [
+const themesList = [
 	{
 		id: "plain",
 		title: "Plain",
@@ -44,11 +44,11 @@ const stylesList = [
 	},
 ];
 
-const Styles = () => {
+const Themes = () => {
 	const chosenSwatch = useRef();
 
 	const previewImages = [];
-	for (let i = 0; i < stylesList.length; i++) previewImages.push(useRef());
+	for (let i = 0; i < themesList.length; i++) previewImages.push(useRef());
 
 	const handleClick = (e) => {
 		if (chosenSwatch.current === e.target) return;
@@ -68,29 +68,29 @@ const Styles = () => {
 	};
 
 	return (
-		<section className={styles.styles}>
+		<section className={styles.themes}>
 			<div className={styles["preview-img-container"]}>
 				<img
 					src='/images/demos/styles-mockup.png'
 					alt='Phone Mockup'
 					className={styles.mockup}
 				/>
-				{stylesList.map((style, index) =>
+				{themesList.map((theme, index) =>
 					index === 0 ? (
 						<img
-							key={style.id}
-							src={style.gif.src}
-							alt={style.gif.alt}
-							id={style.id}
+							key={theme.id}
+							src={theme.gif.src}
+							alt={theme.gif.alt}
+							id={theme.id}
 							ref={previewImages[index]}
 							className={styles.active}
 						/>
 					) : (
 						<img
-							key={style.id}
-							src={style.gif.src}
-							alt={style.gif.alt}
-							id={style.id}
+							key={theme.id}
+							src={theme.gif.src}
+							alt={theme.gif.alt}
+							id={theme.id}
 							ref={previewImages[index]}
 							className=''
 						/>
@@ -99,7 +99,7 @@ const Styles = () => {
 			</div>
 
 			<div className={styles.container}>
-				<h1 className={styles.title}>Styles</h1>
+				<h1 className={styles.title}>Themes</h1>
 
 				<p className={styles.description}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
@@ -107,7 +107,7 @@ const Styles = () => {
 				</p>
 
 				<div className={styles["swatch-container"]}>
-					{stylesList.map((style) =>
+					{themesList.map((style) =>
 						style.title === "Plain" ? (
 							<div
 								key={style.title}
@@ -133,4 +133,4 @@ const Styles = () => {
 	);
 };
 
-export default Styles;
+export default Themes;

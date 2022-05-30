@@ -11,6 +11,8 @@
 
 	box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;
+	/* box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
+	-webkit-box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px; */
 
 	display: flex;
 	align-items: center;
@@ -29,7 +31,7 @@
 
 .nav-links {
 	position: absolute;
-	top: 59.2px;
+	top: 60px;
 	left: 0;
 
 	margin: 0;
@@ -37,14 +39,13 @@
 
 	width: 100%;
 
-	background-color: #fff;
+	background-color: lightblue;
 
 	opacity: 0;
 
 	transform: translateY(-100%);
 
-	box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
-	-webkit-box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
+	transition: all 0.4s ease;
 
 	display: flex;
 	flex-direction: column;
@@ -112,7 +113,6 @@
 	transition: all 0.4s ease;
 }
 
-/* Open Navigation */
 .nav-open ul {
 	opacity: 1;
 

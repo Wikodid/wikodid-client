@@ -3,7 +3,7 @@ import Nav from "@/components/LandingPage/Nav/Nav";
 import Hero from "@/components/LandingPage/Hero/Hero";
 import AboutUs from "@/components/LandingPage/AboutUs/AboutUs";
 import Materials from "@/components/LandingPage/Materials/Materials";
-import Styles from "@/components/LandingPage/StylesSection/Styles";
+import Themes from "@/components/LandingPage/Themes/Themes";
 import Pricing from "@/components/LandingPage/Pricing/Pricing";
 import HowItWorks from "@/components/LandingPage/HowItWorks/HowItWorks";
 import Testimonials from "@/components/LandingPage/Testimonials/Testimonials";
@@ -27,7 +27,7 @@ export default function Home() {
 				<Hero />
 				<AboutUs />
 				<Materials />
-				<Styles />
+				<Themes />
 				<Pricing />
 				<HowItWorks />
 				<Testimonials />

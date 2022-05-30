@@ -122,6 +122,9 @@ const ContactUs = () => {
 		// Send email and update the success variable.
 		// Then have a ternary expression to show the correct popup.
 		popupConfig(success, "Hooray! Your message has been sent successfully");
+
+		// Clear the form
+		e.target.reset();
 	};
 
 	const popupConfig = (success, message) => {
