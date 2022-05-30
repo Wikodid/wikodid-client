@@ -1,7 +1,6 @@
 .navigation {
-	position: fixed;
+	position: sticky;
 	top: 0;
-	left: 0;
 
 	padding: 0 10%;
 
@@ -22,9 +21,10 @@
 
 .logo {
 	margin-right: auto;
+}
 
-	font-size: 24px;
-	font-weight: 700;
+.logo svg {
+	max-width: 100px;
 }
 
 .nav-links {

@@ -14,9 +14,10 @@
 
 .logo {
 	margin-bottom: 1.5rem;
+}
 
-	font-size: 24px;
-	font-weight: 700;
+.logo svg {
+	max-width: 160px;
 }
 
 .link-container {

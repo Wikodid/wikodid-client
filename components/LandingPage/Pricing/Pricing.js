@@ -150,7 +150,7 @@ const Pricing = () => {
 
 						<ul className={styles["feature-list"]}>
 							{plan.features.map((feature) => (
-								<li key={feature.id}>
+								<li key={feature.id} className={styles.feature}>
 									<svg
 										className={styles.tick}
 										width='15'
@@ -164,9 +164,7 @@ const Pricing = () => {
 										/>
 									</svg>
 
-									<p className={styles.feature} title={feature.tooltip}>
-										{feature.title}
-									</p>
+									<p title={feature.tooltip}>{feature.title}</p>
 								</li>
 							))}
 						</ul>
