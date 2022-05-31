@@ -111,10 +111,9 @@
 .pricing-plans-container {
 	width: 100%;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
 }
 
 .plan {
@@ -124,10 +123,13 @@
 	padding: 1rem;
 	border-radius: 20px;
 
-	min-height: 65vh;
+	min-height: 400px;
 	width: 100%;
+	max-width: 320px;
 
 	background-color: #fff3f3;
+
+	place-self: center;
 }
 
 .plan-highlighted {
@@ -235,7 +237,7 @@
 	color: #3f3db7;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
 	.pricing {
 		margin: auto;
 
@@ -246,12 +248,7 @@
 
 	/* Pricing Plans */
 	.pricing-plans-container {
-		flex-direction: row;
-	}
-
-	.plan {
-		max-width: 320px;
-		min-height: 420px;
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.feature p[title] {
