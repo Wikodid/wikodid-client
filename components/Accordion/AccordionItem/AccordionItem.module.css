@@ -41,6 +41,8 @@
 
 .title .svg {
 	margin-left: auto;
+
+	flex-shrink: 0;
 }
 
 .details {
