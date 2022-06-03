@@ -6,8 +6,8 @@ const themesList = [
 	{
 		id: "plain",
 		title: "Plain",
-		gif: {
-			src: "/images/demos/plain-demo.png",
+		webp: {
+			src: "/images/demos/plain-demo.webp",
 			alt: "Plain Demo",
 		},
 		previewImg: {
@@ -19,8 +19,8 @@ const themesList = [
 	{
 		id: "styled",
 		title: "Styled",
-		gif: {
-			src: "/images/demos/styled-demo.png",
+		webp: {
+			src: "/images/demos/styled-demo.webp",
 			alt: "Styled Demo",
 		},
 		previewImg: {
@@ -32,8 +32,8 @@ const themesList = [
 	{
 		id: "detailed",
 		title: "Detailed",
-		gif: {
-			src: "/images/demos/detailed-demo.png",
+		webp: {
+			src: "/images/demos/detailed-demo.webp",
 			alt: "Detailed Demo",
 		},
 		previewImg: {
@@ -71,31 +71,23 @@ const Themes = () => {
 		<section className={styles.themes}>
 			<div className={styles["preview-img-container"]}>
 				<img
-					src='/images/demos/styles-mockup.png'
+					src='/images/demos/style-mockup.png'
 					alt='Phone Mockup'
 					className={styles.mockup}
 				/>
-				{themesList.map((theme, index) =>
-					index === 0 ? (
+
+				<div className={styles["preview-wrapper"]}>
+					{themesList.map((theme, index) => (
 						<img
 							key={theme.id}
-							src={theme.gif.src}
-							alt={theme.gif.alt}
-							id={theme.id}
+							src={theme.webp.src}
 							ref={previewImages[index]}
-							className={styles.active}
-						/>
-					) : (
-						<img
-							key={theme.id}
-							src={theme.gif.src}
-							alt={theme.gif.alt}
+							className={index === 0 ? styles.active : ""}
+							alt={theme.webp.alt}
 							id={theme.id}
-							ref={previewImages[index]}
-							className=''
 						/>
-					)
-				)}
+					))}
+				</div>
 			</div>
 
 			<div className={styles.container}>

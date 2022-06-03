@@ -1,90 +1,7 @@
-import { useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 import styles from "@/components/LandingPage/Materials/Materials.module.css";
-
-// const materials = [
-// 	{
-// 		id: "wooden-cube",
-// 		index: 0,
-// 		details: {
-// 			name: "Wooden Cube",
-// 			price: "17.00",
-// 		},
-// 		texture: {
-// 			src: "https://w7.pngwing.com/pngs/166/632/png-transparent-hardwood-wood-flooring-warm-wood-texture-background-texture-brown-wall-texture-thumbnail.png",
-// 			alt: "Wood thumbnail",
-// 		},
-// 		assetImg: {
-// 			src: "https://www.transparentpng.com/thumb/cube/AIm3i3-cube-png-picture.png",
-// 			alt: "Wood Asset Image",
-// 		},
-// 	},
-// 	{
-// 		id: "wooden-plaque",
-// 		index: 2,
-// 		details: {
-// 			name: "Wooden Plaque",
-// 			price: "11.00",
-// 		},
-// 		texture: {
-// 			src: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s117-ak-0199-01_3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b0528c65cfdc381feee893efec9677f1",
-// 			alt: "Wooden Plaque thumbnail",
-// 		},
-// 		assetImg: {
-// 			src: "https://www.transparentpng.com/thumb/cube/AIm3i3-cube-png-picture.png",
-// 			alt: "Wooden Plaque Asset Image",
-// 		},
-// 	},
-// 	{
-// 		id: "marble-plaque",
-// 		index: 2,
-// 		details: {
-// 			name: "Marble Plaque",
-// 			price: "13.00",
-// 		},
-// 		texture: {
-// 			src: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s117-ak-0199-01_3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b0528c65cfdc381feee893efec9677f1",
-// 			alt: "Marble Plaque thumbnail",
-// 		},
-// 		assetImg: {
-// 			src: "https://www.transparentpng.com/thumb/cube/AIm3i3-cube-png-picture.png",
-// 			alt: "Marble Plaque Asset Image",
-// 		},
-// 	},
-// 	{
-// 		id: "plexiglass-cube",
-// 		index: 1,
-// 		details: {
-// 			name: "Plexiglass Cube",
-// 			price: "23.00",
-// 		},
-// 		texture: {
-// 			src: "https://wallpapercave.com/wp/wp3269345.png",
-// 			alt: "Plexiglass thumbnail",
-// 		},
-// 		assetImg: {
-// 			src: "https://www.transparentpng.com/thumb/cube/AIm3i3-cube-png-picture.png",
-// 			alt: "Plexiglass Asset Image",
-// 		},
-// 	},
-// 	{
-// 		id: "plexiglass-plaque",
-// 		index: 2,
-// 		details: {
-// 			name: "Plexiglass Plaque",
-// 			price: "13.00",
-// 		},
-// 		texture: {
-// 			src: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s117-ak-0199-01_3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b0528c65cfdc381feee893efec9677f1",
-// 			alt: "Plexiglass Plaque thumbnail",
-// 		},
-// 		assetImg: {
-// 			src: "https://www.transparentpng.com/thumb/cube/AIm3i3-cube-png-picture.png",
-// 			alt: "Plexiglass Plaque Asset Image",
-// 		},
-// 	},
-// ];
 
 const materials = [
 	{
@@ -186,9 +103,10 @@ const materials = [
 ];
 
 const Materials = () => {
+	const [materialCoordinates, setMaterialCoordinates] = useState([]);
+
 	const currentSwatch = useRef();
 	const materialContainer = useRef();
-	const materialCoordinates = [];
 
 	const handleClick = (e) => {
 		if (currentSwatch.current === e.target) return;
@@ -214,17 +132,21 @@ const Materials = () => {
 	};
 
 	useEffect(() => {
-		const containerLeft = document
+		let containerLeft = document
 			.querySelector(`.${styles["materials-asset-container"]}`)
 			.getBoundingClientRect().left;
+
+		const tempMaterials = [];
 
 		document
 			.querySelectorAll(`.${styles["material-asset"]}`)
 			.forEach(
 				(material, index) =>
-					(materialCoordinates[index] =
+					(tempMaterials[index] =
 						material.getBoundingClientRect().left - containerLeft)
 			);
+
+		setMaterialCoordinates(tempMaterials);
 	}, []);
 
 	return (

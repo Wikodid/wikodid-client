@@ -40,7 +40,7 @@ const reviews = [
 			position: "CEO",
 			store: "Palermo",
 			img: {
-				src: "/images/demos/plain-demo.png",
+				src: "/images/customers/tuk-tuk.png",
 				alt: "Store Image",
 			},
 		},
