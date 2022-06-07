@@ -159,6 +159,23 @@ const ContactUs = () => {
 
 		// Clear the form
 		e.target.reset();
+
+		// ? Doesn't quite work
+		// Reinitialize fomr data watchers
+		// setReady({
+		// 	firstName: false,
+		// 	lastName: false,
+		// 	email: false,
+		// 	phoneNumber: false,
+		// });
+
+		// setFormData({
+		// 	firstName: "",
+		// 	lastName: "",
+		// 	email: "",
+		// 	phoneNumber: "",
+		// 	message: "",
+		// });
 	};
 
 	const popupConfig = (success, message) => {
