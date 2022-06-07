@@ -9,29 +9,41 @@ const pricingPlans = [
 		description: "Perfect for Beginners",
 		price: {
 			monthly: "2.99",
-			yearly: "19.99",
+			yearly: "89.99",
 			deal: {
 				previous: {
 					monthly: "4.99",
-					yearly: "34.99",
+					yearly: "129.99",
 				},
 			},
 		},
 		features: [
 			{
 				id: 0,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "Δημιουργία καταλόγου",
+				tooltip:
+					"Δημιουργούμε αυτόματα τον ηλεκτρονικό σου κατάλογο σύμφωνα με την τωρινή του μορφή",
 			},
 			{
 				id: 1,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "QR Code σε ηλεκτρονική μορφή",
+				tooltip: "QR του καταλόγου σου σε μορφές .jpg, .png, .svg και .pdf",
 			},
 			{
 				id: 2,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "Hosting",
+				tooltip:
+					"Ο ηλεκτρονικός σου κατάλογος φιλοξενείται στους δικούς μας server και είναι διαθέσιμος 24/7",
+			},
+			{
+				id: 3,
+				title: "2 γλώσσες",
+				tooltip: "Διαθέσιμος κατάλογος σε 2 γλώσσες της επιλογής σου",
+			},
+			{
+				id: 4,
+				title: "Διαθέσιμα Themes: Plain",
+				tooltip: "Plain theme για την εμφάνιση του καταλόγου σου",
 			},
 		],
 	},
@@ -41,23 +53,48 @@ const pricingPlans = [
 		tag: "popular",
 		price: {
 			monthly: "5.99",
-			yearly: "59.99",
+			yearly: "99.99",
+			deal: {
+				previous: {
+					monthly: "4.99",
+					yearly: "149.99",
+				},
+			},
 		},
 		features: [
 			{
 				id: 0,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "Δημιουργία καταλόγου",
+				tooltip:
+					"Δημιουργούμε αυτόματα τον ηλεκτρονικό σου κατάλογο σύμφωνα με την τωρινή του μορφή",
 			},
 			{
 				id: 1,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "QR Code σε ηλεκτρονική μορφή",
+				tooltip: "QR του καταλόγου σου σε μορφές .jpg, .png, .svg και .pdf",
 			},
 			{
 				id: 2,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "Hosting",
+				tooltip:
+					"Ο ηλεκτρονικός σου κατάλογος φιλοξενείται στους δικούς μας server και είναι διαθέσιμος 24/7",
+			},
+			{
+				id: 3,
+				title: "2 γλώσσες",
+				tooltip: "Διαθέσιμος κατάλογος σε 2 γλώσσες της επιλογής σου",
+			},
+			{
+				id: 4,
+				title: "4 διορθώσεις μενού / χρόνο",
+				tooltip:
+					"Αλλαγές σε τιμή, φωτογραφία ή περιγραφή προϊόντος έως και 4 φορές τον χρόνο",
+			},
+			{
+				id: 5,
+				title: "Διαθέσιμα Themes: Plain, Styled",
+				tooltip:
+					"Επιλογή Plain ή Styled theme για την εμφάνιση του καταλόγου σου",
 			},
 		],
 	},
@@ -66,23 +103,58 @@ const pricingPlans = [
 		description: "For serious businesses",
 		price: {
 			monthly: "12.99",
-			yearly: "124.99",
+			yearly: "149.99",
+			deal: {
+				previous: {
+					monthly: "4.99",
+					yearly: "249.99",
+				},
+			},
 		},
 		features: [
 			{
 				id: 0,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "Δημιουργία καταλόγου",
+				tooltip:
+					"Δημιουργούμε αυτόματα τον ηλεκτρονικό σου κατάλογο σύμφωνα με την τωρινή του μορφή",
 			},
 			{
 				id: 1,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "QR Code σε ηλεκτρονική μορφή",
+				tooltip: "QR του καταλόγου σου σε μορφές .jpg, .png, .svg και .pdf",
 			},
 			{
 				id: 2,
-				title: "24h Support",
-				tooltip: "Premium support agent available at all times",
+				title: "Hosting",
+				tooltip:
+					"Ο ηλεκτρονικός σου κατάλογος φιλοξενείται στους δικούς μας server και είναι διαθέσιμος 24/7",
+			},
+			{
+				id: 3,
+				title: "3 γλώσσες",
+				tooltip: "Διαθέσιμος κατάλογος σε 3 γλώσσες της επιλογής σου",
+			},
+			{
+				id: 4,
+				title: "1 διόρθωση μενού / μήνα",
+				tooltip:
+					"Αλλαγές σε τιμή, φωτογραφία ή περιγραφή προϊόντος έως και 1 φορά το μήνα",
+			},
+			{
+				id: 5,
+				title: "1 ολική αλλαγή μενού / χρόνο",
+				tooltip:
+					"Ολοκληρωτική αλλαγή στον κατάλογό σου έως και 1 φορά το χρόνο",
+			},
+			{
+				id: 6,
+				title: "Διαθέσιμα Themes: Όλα",
+				tooltip:
+					"Επιλογή Plain, Styled ή Detailed theme για την εμφάνιση του καταλόγου σου",
+			},
+			{
+				id: 7,
+				title: "Συνεχής Υποστήριξη",
 			},
 		],
 	},
@@ -109,7 +181,7 @@ const Pricing = () => {
 				</p>
 			</div>
 
-			<div className={styles["switch-container"]}>
+			<div className={styles["switch-container"]} style={{ display: "none" }}>
 				<div className={styles.switch} onClick={handleClick}>
 					<div className={styles.toggle}></div>
 				</div>
@@ -132,20 +204,23 @@ const Pricing = () => {
 						{plan.price.deal && (
 							<span className={styles.deal}>
 								<s>
-									$
-									{switchOn
+									€
+									{/* {switchOn
 										? plan.price.deal.previous.yearly
-										: plan.price.deal.previous.monthly}
+										: plan.price.deal.previous.monthly} */}
+									{plan.price.deal.previous.yearly}
 								</s>
 							</span>
 						)}
 
 						<div className={styles.price}>
 							<span className={styles.amount}>
-								<span>$</span>
-								{switchOn ? plan.price.yearly : plan.price.monthly}
+								<span>€</span>
+								{/* {switchOn ? plan.price.yearly : plan.price.monthly} */}
+								{plan.price.yearly}
 							</span>
-							<span>/ {switchOn ? "year" : "month"}</span>
+							{/* <span>/ {switchOn ? "year" : "month"}</span> */}
+							<span>/ year</span>
 						</div>
 
 						<ul className={styles["feature-list"]}>

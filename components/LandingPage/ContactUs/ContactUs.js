@@ -8,6 +8,38 @@ const inputs = [
 	{
 		type: "text",
 		name: "firstName",
+		label: "Όνομα",
+		placeholder: "John",
+		required: "required",
+	},
+	{
+		type: "text",
+		name: "lastName",
+		label: "Επώνυμο",
+		placeholder: "Doe",
+		required: "required",
+	},
+	{
+		type: "email",
+		name: "email",
+		label: "Email",
+		placeholder: "youremail@gmail.com",
+		required: "required",
+	},
+	{
+		type: "tel",
+		name: "phoneNumber",
+		label: "Αριθμός τηλεφώνου",
+		placeholder: "+306926589122",
+		required: "required",
+	},
+];
+
+// Controllable inputs - English
+const inputsEN = [
+	{
+		type: "text",
+		name: "firstName",
 		label: "First Name",
 		placeholder: "John",
 		required: "required",
@@ -54,8 +86,8 @@ const socialLinks = [
 // Quick Actions
 const quickActions = [
 	{
-		content: "+30 692 673 2873",
-		url: "tel:+306926732873",
+		content: "+30 698 647 9274",
+		url: "tel:+306986479274",
 		svg: {
 			width: "36",
 			height: "36",
@@ -114,14 +146,16 @@ const ContactUs = () => {
 		if (!success) {
 			popupConfig(
 				success,
-				"There was an error while submitting your form... Please wait and try again later"
+				"Υπήρξε κάποιο πρόβλημα με την αποστολή του μηνύματός σας... Παρακαλούμε δοκιμάστε πάλι σε λίγο"
+				// "There was an error while submitting your form... Please wait and try again later"
 			);
 			return;
 		}
 
 		// Send email and update the success variable.
 		// Then have a ternary expression to show the correct popup.
-		popupConfig(success, "Hooray! Your message has been sent successfully");
+		popupConfig(success, "Επιτυχία! Το μήνυμα έχει σταλεί");
+		// popupConfig(success, "Hooray! Your message has been sent successfully");
 
 		// Clear the form
 		e.target.reset();
@@ -173,7 +207,8 @@ const ContactUs = () => {
 		let message;
 
 		if (!validateRequired(value)) {
-			message = "This field is required";
+			message = "Το πεδίο αυτό είναι υποχρεωτικό";
+			// message = "This field is required";
 
 			let index = findIndex(input.name);
 
@@ -185,7 +220,8 @@ const ContactUs = () => {
 		switch (input.type) {
 			case "text":
 				if (!validateName(value)) {
-					message = "This field must be at least two characters long";
+					message = "Το πεδίο αυτό πρέπει να έχει τουλάχιστον 2 χαρακτήρες";
+					// message = "This field must be at least two characters long";
 
 					let index = findIndex(input.name);
 
@@ -198,7 +234,8 @@ const ContactUs = () => {
 
 			case "email":
 				if (!validateEmail(value)) {
-					message = "This is not a valid email address";
+					message = "Η διεύθυνση email δεν είναι έγκυρη";
+					// message = "This is not a valid email address";
 
 					let index = findIndex(input.name);
 
@@ -210,7 +247,8 @@ const ContactUs = () => {
 
 			case "tel":
 				if (!validatePhone(value)) {
-					message = "This is not a valid phone number";
+					message = "Ο αριθμός τηλεφώνου δεν είναι έγκυρος";
+					// message = "This is not a valid phone number";
 
 					let index = findIndex(input.name);
 
@@ -342,7 +380,8 @@ const ContactUs = () => {
 
 							<div
 								className={`${styles["input-container"]} ${styles.textarea}`}>
-								<label htmlFor='message'>Message</label>
+								<label htmlFor='message'>Μήνυμα</label>
+								{/* <label htmlFor='message'>Message</label> */}
 								<textarea
 									onChange={handleChange}
 									name='message'
@@ -352,61 +391,18 @@ const ContactUs = () => {
 							</div>
 						</div>
 
-						<button className={styles.submit}>Send</button>
+						<button className={styles.submit}>Αποστολή</button>
 
-						<p className={styles.small}>We usually reply within a day</p>
+						<p className={styles.small}>Συνήθως απαντούμε εντός μίας ημέρας</p>
 					</form>
 				</div>
 			</section>
 
 			<div className={styles.popup} ref={popup}>
-				Success! Your message has been sent
+				Επιτυχία! Το μήνυμα έχει σταλεί και θα επικοινωνήσουμε μαζί σας σε λίγο
 			</div>
 		</>
 	);
 };
 
 export default ContactUs;
-
-/*
-    1. 
-
-    
-		input.addEventListener("input", (e) => {
-			let validColor = "#6391e8";
-			let invalidColor = "#fe8c99";
-
-			let inputText = e.target.value;
-
-			// Name Validation
-			if (e.target.type === "text") {
-				if (validateName(inputText)) {
-					colorize(validColor, line, placeholder);
-				} else {
-					colorize(invalidColor, line, placeholder);
-				}
-			}
-
-			// Email Validation
-			if (e.target.type === "email") {
-				if (validateEmail(inputText)) {
-					colorize(validColor, line, placeholder);
-				} else {
-					colorize(invalidColor, line, placeholder);
-				}
-			}
-
-			// Phone Number Validation
-			if (e.target.type === "tel") {
-				if (validatePhone(inputText)) {
-					colorize(validColor, line, placeholder);
-				} else {
-					colorize(invalidColor, line, placeholder);
-				}
-			}
-		});
-
-    
-
-
-*/

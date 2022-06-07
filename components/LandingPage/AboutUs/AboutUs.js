@@ -25,12 +25,19 @@ const AboutUs = () => {
 			</div>
 
 			<div className={styles["animation-container"]}>
-				<video
+				<img
+					src='/images/about/about-us-img.svg'
+					alt='Workflow Illustration'
+					className={styles.animation}
+				/>
+
+				{/* <video
 					src='/videos/demo-video.mp4'
 					autoPlay
 					loop
 					muted
 					className={styles.animation}></video>
+				 */}
 			</div>
 		</section>
 	);
