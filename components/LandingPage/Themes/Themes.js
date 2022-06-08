@@ -68,7 +68,7 @@ const Themes = () => {
 	};
 
 	return (
-		<section className={styles.themes}>
+		<section className={styles.themes} id='themes'>
 			<div className={styles["preview-img-container"]}>
 				<img
 					src='/images/demos/style-mockup.png'
@@ -94,8 +94,24 @@ const Themes = () => {
 				<h1 className={styles.title}>Themes</h1>
 
 				<p className={styles.description}>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-					velit hic nesciunt.
+					Διάλεξε το theme που ταιριάζει στο ύφος του καταλόγου σου. <br />
+				</p>
+
+				<p className={styles.description}>
+					Αν προτιμάς μινιμαλιστικό look χωρίς πολλά πολλά, το Plain είναι το
+					κατάλληλο theme για εσένα.
+				</p>
+
+				<p className={styles.description}>
+					Για πιο στυλάτη εμφάνιση, το Styled σου δίνει την δυνατότητα να
+					ενσωματώσεις μία φωτογραφία της επιλογής σου στο background του
+					καταλόγου σου.
+				</p>
+
+				<p className={styles.description}>
+					Και αν πάλι νομίζεις πως τα άλλα themes δεν είναι αρκετά, με το
+					Detailed μπορείς να ενσωματώσεις μία διαφορετική εικόνα για κάθε
+					κατηγορία του καταλόγου σου!
 				</p>
 
 				<div className={styles["swatch-container"]}>

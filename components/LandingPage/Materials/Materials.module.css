@@ -14,6 +14,10 @@
 	padding: 0 10%;
 }
 
+.content p {
+	color: #838383;
+}
+
 .materials-container {
 	margin-top: 4rem;
 
@@ -65,6 +69,13 @@
 	font-weight: 500;
 }
 
+.material-asset-name span {
+	font-size: 0.9rem;
+	font-weight: 400;
+
+	display: block;
+}
+
 .material-swatches {
 	margin-top: 2.5rem;
 
@@ -80,8 +91,6 @@
 
 	height: 24px;
 	width: 24px;
-	/* height: 48px;
-	width: 48px; */
 
 	background-color: red;
 

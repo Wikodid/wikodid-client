@@ -11,6 +11,10 @@
 	padding: 2rem 0;
 }
 
+.text p {
+	color: #838383;
+}
+
 .animation-container {
 	width: 100%;
 }

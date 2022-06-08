@@ -16,8 +16,11 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Wikodid | Landing Page</title>
-				<meta name='description' content='This is the official Wikodid site' />
+				<title>Wikodid | Zero Waste Menus</title>
+				<meta
+					name='description'
+					content='Ηλεκτρονικοί κατάλογοι με την μορφή QR κωδικού σε διάφορα υλικά και με personalized εμφλανιση. Τα μενού wikodid αποτελούν τον πλέον αυτοβιώσιμο, covid-free και φιλικό προς το περιβάλλον τρόπο για την παρουσίαση των προϊόντων της εταιρίας σου.'
+				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 

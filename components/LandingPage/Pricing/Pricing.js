@@ -1,12 +1,11 @@
 import { useState } from "react";
-// import Link from "next/link";
 
 import styles from "@/components/LandingPage/Pricing/Pricing.module.css";
 
 const pricingPlans = [
 	{
 		title: "Lite",
-		description: "Perfect for Beginners",
+		description: "Για όσους βρίσκονται στο ξεκίνημα",
 		price: {
 			monthly: "2.99",
 			yearly: "89.99",
@@ -49,7 +48,7 @@ const pricingPlans = [
 	},
 	{
 		title: "Standard",
-		description: "Best for professionals",
+		description: "Ιδανικό για επαγγελματίες",
 		tag: "popular",
 		price: {
 			monthly: "5.99",
@@ -100,7 +99,7 @@ const pricingPlans = [
 	},
 	{
 		title: "Pro",
-		description: "For serious businesses",
+		description: "Για σοβαρές επιχειρήσεις",
 		price: {
 			monthly: "12.99",
 			yearly: "149.99",
@@ -176,8 +175,8 @@ const Pricing = () => {
 			<div className={styles.text}>
 				<h1>Pricing</h1>
 				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit magni
-					quam porro.
+					Επωφελήσου από τις προσφορές μας έως και τις 31/12/2022 <br /> και
+					γίνε σύμμαχος της wikodid!
 				</p>
 			</div>
 
@@ -220,7 +219,7 @@ const Pricing = () => {
 								{plan.price.yearly}
 							</span>
 							{/* <span>/ {switchOn ? "year" : "month"}</span> */}
-							<span>/ year</span>
+							<span>/ χρόνο</span>
 						</div>
 
 						<ul className={styles["feature-list"]}>

@@ -7,7 +7,7 @@ const reviews = [
 		id: "tuktuk",
 		customer: {
 			name: "Μπάμπης Ασκερίδης",
-			position: "CEO",
+			position: "Ιδιοκτήτης",
 			store: "Tuk Tuk",
 			img: {
 				src: "/images/customers/tuk-tuk.png",
@@ -22,7 +22,7 @@ const reviews = [
 		id: "artemis",
 		customer: {
 			name: "Κώστας Λάμπρου",
-			position: "Owner",
+			position: "Ιδιοκτήτης",
 			store: "Artemis",
 			img: {
 				src: "/images/customers/artemis.png",
@@ -33,21 +33,21 @@ const reviews = [
 		details:
 			"Καταπληκτικό εργαλείο, ειδικά για τουριστικές περιοχές όπως το Πευκί. Με την Wikodid ξεχνάς τους χάρτινους καταλόγους, προσαρμόζεις εύκολα οποιαδήποτε αλλαγή σε τιμές ή προϊόντα και διατίθεται σε όποια γλώσσα ζητήσεις. Μας έλυσε τα χέρια!",
 	},
-	{
-		id: "palermo",
-		customer: {
-			name: "Georgios Papadopoulos",
-			position: "CEO",
-			store: "Palermo",
-			img: {
-				src: "/images/customers/tuk-tuk.png",
-				alt: "Store Image",
-			},
-		},
-		headline: "I suggest them to anyone that is serious about their business!",
-		details:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate dolor nesciunt nobis consectetur recusandae id quos nisi odio nostrum! Quis, aliquam. Maxime quo quos neque vitae nostrum. Nisi nobis possimus sapiente.",
-	},
+	// {
+	// 	id: "palermo",
+	// 	customer: {
+	// 		name: "Georgios Papadopoulos",
+	// 		position: "CEO",
+	// 		store: "Palermo",
+	// 		img: {
+	// 			src: "/images/customers/tuk-tuk.png",
+	// 			alt: "Store Image",
+	// 		},
+	// 	},
+	// 	headline: "I suggest them to anyone that is serious about their business!",
+	// 	details:
+	// 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate dolor nesciunt nobis consectetur recusandae id quos nisi odio nostrum! Quis, aliquam. Maxime quo quos neque vitae nostrum. Nisi nobis possimus sapiente.",
+	// },
 ];
 
 const Testimonials = () => {

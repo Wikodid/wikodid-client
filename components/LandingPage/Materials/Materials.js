@@ -8,7 +8,7 @@ const materials = [
 		id: "wooden-cube",
 		index: 0,
 		details: {
-			name: "Wooden Cube",
+			name: "Ξύλινος Κύβος",
 			price: "17.00",
 		},
 		texture: {
@@ -24,7 +24,7 @@ const materials = [
 		id: "wooden-plaque",
 		index: 2,
 		details: {
-			name: "Wooden Plaque",
+			name: "Ξύλινο Πλακίδιο",
 			price: "11.00",
 		},
 		texture: {
@@ -40,7 +40,7 @@ const materials = [
 		id: "white-marble-plaque",
 		index: 2,
 		details: {
-			name: "White Marble Plaque",
+			name: "Λευκή Μαρμάρινη Πλάκα",
 			price: "13.00",
 		},
 		texture: {
@@ -56,7 +56,7 @@ const materials = [
 		id: "black-marble-plaque",
 		index: 2,
 		details: {
-			name: "Black Marble Plaque",
+			name: "Μαύρη Μαρμάρινη Πλάκα",
 			price: "13.00",
 		},
 		texture: {
@@ -72,7 +72,8 @@ const materials = [
 		id: "plexiglass-cube",
 		index: 1,
 		details: {
-			name: "Coloured Plexiglass Cube",
+			name: "Χρωματιστός Κύβος Plexiglass",
+			additional: "(Χρώμα της επιλογής σας)",
 			price: "23.00",
 		},
 		texture: {
@@ -150,12 +151,18 @@ const Materials = () => {
 	}, []);
 
 	return (
-		<section className={styles.materials} id='services'>
+		<section className={styles.materials} id='materials'>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Materials</h1>
+				<h1 className={styles.title}>Υλικά</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit
-					sapiente iusto.
+					Μεγάλη ποικιλία σε υλικά και γραφιστική εμφάνιση σε συνδυασμό με την
+					λίστα των οικονομικών μας πακέτων σε περιμένουν για να διαλέξεις τον
+					δικό σου συνδυασμό πακέτου και υλικών ανάλογα με τον όγκο πληροφορίας
+					που επιθυμείς να προβάλλεις.
+				</p>
+				<p>
+					Η Wikodid σου δίνει την ευκαιρία να παρουσιάσεις τα προϊόντα της
+					επιχείρισής σου με προσαρμόσιμο και personalized τρόπο!
 				</p>
 
 				<div className={styles["material-swatches"]}>
@@ -204,9 +211,10 @@ const Materials = () => {
 							<div className={styles["material-asset-description"]}>
 								<p className={styles["material-asset-name"]}>
 									{material.details.name}
+									<span>{material.details.additional}</span>
 								</p>
 								<p className={styles["material-asset-price"]}>
-									{material.details.price}€ / piece
+									{material.details.price}€ / κομμάτι
 								</p>
 							</div>
 						</article>

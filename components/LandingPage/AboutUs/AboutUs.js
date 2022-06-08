@@ -4,23 +4,19 @@ const AboutUs = () => {
 	return (
 		<section className={styles.about} id='about'>
 			<div className={styles.text}>
-				<h1>What is Wikodid?</h1>
+				<h1>Τι είναι η wikodid;</h1>
 
 				<p>
-					It is a new way of approaching a business’s appearance, reach and
-					management. It is now possible for businesses to utilize technology
-					and the help of the digital medium to present their catalogues and be
-					more accessible.
+					Wikodid ονομάζεται ο ηλεκτρονικός κατάλογος μηδενικού ρύπου προς το
+					περιβάλλον που κάθε καφετέρια, εστιατόριο, beach bar ή ξενοδοχείο
+					χρειάζεται.
 				</p>
 				<p>
-					It is a new way of approaching a business’s appearance, reach and
-					management. It is now possible for businesses to utilize technology
-					and the help of the digital medium to present their catalogues and be
-					more accessible.
-				</p>
-				<p>
-					It is a new way of approaching a business’s appearance, reach and
-					management.
+					Με την μορφή QR κωδικού σε κύβους από plexiglass ή ξύλο, μαρμάρινα
+					πλακίδια και αυτοκόλλητα ποικίλων διαστάσεων, τα μενού wikodid
+					αποτελούν τον πλέον αυτοβιώσιμο, covid-free και φιλικό προς το
+					περιβάλλον τρόπο για την παρουσίαση της εταιρίας σου και των προϊόντων
+					της.
 				</p>
 			</div>
 

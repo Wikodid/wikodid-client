@@ -7,49 +7,49 @@ const linkList = [
 		title: "Wikodid",
 		links: [
 			{
-				title: "Materials",
-				href: "#",
+				title: "About",
+				href: "#about",
 			},
 			{
-				title: "Products",
-				href: "#",
+				title: "Υλικά",
+				href: "#materials",
+			},
+			{
+				title: "Themes",
+				href: "#themes",
 			},
 			{
 				title: "Pricing",
-				href: "#",
+				href: "#pricing",
 			},
 			{
-				title: "About",
-				href: "#",
-			},
-			{
-				title: "Contact",
-				href: "#",
+				title: "Επικοινωνία",
+				href: "#contact",
 			},
 		],
 	},
-	{
-		title: "More",
-		links: [
-			{
-				title: "Coming Soon",
-				href: "#",
-			},
-		],
-	},
-	{
-		title: "Legal",
-		links: [
-			{
-				title: "Terms of Services",
-				href: "#",
-			},
-			{
-				title: "Privacy Policy",
-				href: "#",
-			},
-		],
-	},
+	// {
+	// 	title: "More",
+	// 	links: [
+	// 		{
+	// 			title: "Coming Soon",
+	// 			href: "#",
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	title: "Legal",
+	// 	links: [
+	// 		{
+	// 			title: "Terms of Services",
+	// 			href: "#",
+	// 		},
+	// 		{
+	// 			title: "Privacy Policy",
+	// 			href: "#",
+	// 		},
+	// 	],
+	// },
 ];
 
 const Footer = () => {
@@ -114,8 +114,12 @@ const Footer = () => {
 			</div>
 			<div className={styles.small}>
 				<p>
-					&copy; Copyright 2022 - All rights reserved - Developed by Kyriakos
-					Bekas
+					&copy; Copyright 2022 - All rights reserved - Developed by{" "}
+					<Link href='https://www.linkedin.com/in/kyriakos-bekas/'>
+						<a target='_blank' className={styles.dev}>
+							Kyriakos Bekas
+						</a>
+					</Link>
 				</p>
 			</div>
 		</footer>

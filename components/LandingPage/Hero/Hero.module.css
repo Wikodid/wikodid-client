@@ -73,6 +73,10 @@
 		line-height: 6.5rem;
 	}
 
+	.hero > p {
+		max-width: 40%;
+	}
+
 	.button {
 		margin-top: 1.5rem;
 	}

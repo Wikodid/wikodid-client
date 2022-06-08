@@ -6,15 +6,15 @@ import styles from "@/components/LandingPage/Nav/Nav.module.css";
 const links = [
 	{
 		id: "#",
-		name: "Home",
+		name: "Αρχική",
 	},
 	{
 		id: "#about",
-		name: "About",
+		name: "About us",
 	},
 	{
-		id: "#services",
-		name: "Services",
+		id: "#materials",
+		name: "Υπηρεσίες",
 	},
 	{
 		id: "#pricing",
@@ -22,7 +22,7 @@ const links = [
 	},
 	{
 		id: "#contact",
-		name: "Contact",
+		name: "Επικοινωνία",
 		cssClass: "contact-btn",
 	},
 ];

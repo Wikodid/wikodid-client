@@ -103,6 +103,10 @@
 	margin-bottom: 0;
 }
 
+.description {
+	color: #838383;
+}
+
 @media screen and (min-width: 769px) {
 	.themes {
 		flex-direction: row;

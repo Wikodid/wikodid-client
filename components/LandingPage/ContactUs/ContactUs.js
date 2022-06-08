@@ -311,12 +311,15 @@ const ContactUs = () => {
 			<section className={styles.contact} id='contact'>
 				<div className={styles.left}>
 					<div>
-						<h1>Get in touch</h1>
+						<h1>Κάνε το βήμα</h1>
 						<p>
-							Are you ready? Send us a message telling us which materials and
-							style suit your business and let’s get started! Do you have a
-							question instead? We are here to fill in any details, so make sure
-							to reach out to us.
+							Ήρθε η ώρα να σκεφτείς κι εσύ οικολογικά και να εκμεταλλευτείς τις
+							δυνατότητες της τεχνολογίας που έχουμε να σου προσφέρουμε. Τι
+							περιμένεις;
+						</p>
+						<p>
+							Επικοινώνησε με την έμπειρη ομάδα μας και λάβε άμεσα μία προσφορά
+							φτιαγμένη για ‘σένα!
 						</p>
 					</div>
 

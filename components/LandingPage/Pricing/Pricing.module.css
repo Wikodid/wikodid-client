@@ -9,6 +9,10 @@
 	text-align: center;
 }
 
+.text p {
+	color: #838383;
+}
+
 .switch-container {
 	margin-top: 2.5rem;
 
