@@ -17,9 +17,15 @@ const Hero = () => {
 
 			<div className={styles["img-container"]}>
 				<img
-					src='/images/demos/hero-mockup.png'
+					// src='/images/demos/hero-mockup.png'
+					src='/images/hero/hero-banner.png'
 					alt='Mockup'
-					className={styles.img}
+					className={styles["img-mobile"]}
+				/>
+				<img
+					src='/images/hero/hero-banner-transparent.png'
+					alt='Mockup'
+					className={styles["img-desktop"]}
 				/>
 			</div>
 		</section>
