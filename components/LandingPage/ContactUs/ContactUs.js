@@ -130,7 +130,7 @@ const ContactUs = () => {
 
 	// Form Handlers
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
 		// Checking Validity of all inputs
@@ -142,40 +142,30 @@ const ContactUs = () => {
 
 		const success = !invalidEntries.length;
 
-		// Display popup for invalid inputs
+		// Display popup if there are invalid inputs
 		if (!success) {
 			popupConfig(
 				success,
-				"Υπήρξε κάποιο πρόβλημα με την αποστολή του μηνύματός σας... Παρακαλούμε δοκιμάστε πάλι σε λίγο"
+				"Ένα ή περισσότερα πεδία περιέχουν λάθος δεδομένα... Παρακαλούμε διορθώστε τα και προσπαθήστε πάλι"
 				// "There was an error while submitting your form... Please wait and try again later"
 			);
 			return;
 		}
 
 		// Send email and update the success variable.
-		// Then have a ternary expression to show the correct popup.
-		popupConfig(success, "Επιτυχία! Το μήνυμα έχει σταλεί");
-		// popupConfig(success, "Hooray! Your message has been sent successfully");
+		const response = await fetch("/api/mail", {
+			method: "post",
+			body: JSON.stringify(formData),
+		});
 
-		// Clear the form
-		e.target.reset();
+		success = response.ok;
 
-		// ? Doesn't quite work
-		// Reinitialize fomr data watchers
-		// setReady({
-		// 	firstName: false,
-		// 	lastName: false,
-		// 	email: false,
-		// 	phoneNumber: false,
-		// });
+		const data = await response.json();
 
-		// setFormData({
-		// 	firstName: "",
-		// 	lastName: "",
-		// 	email: "",
-		// 	phoneNumber: "",
-		// 	message: "",
-		// });
+		// Configure Popup based on server response
+		popupConfig(success, data.message);
+
+		// * Clear the form - to be implemented
 	};
 
 	const popupConfig = (success, message) => {
