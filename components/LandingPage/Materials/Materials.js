@@ -153,7 +153,7 @@ const Materials = () => {
 	return (
 		<section className={styles.materials} id='materials'>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Υλικά</h1>
+				<h1 className={styles.title}>Τα υλικά μας</h1>
 				<p>
 					Μεγάλη ποικιλία σε υλικά και γραφιστική εμφάνιση σε συνδυασμό με την
 					λίστα των οικονομικών μας πακέτων σε περιμένουν για να διαλέξεις τον

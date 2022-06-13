@@ -11,7 +11,7 @@
 	width: 90%;
 	max-width: 320px;
 
-	color: #000;
+	color: #fff;
 
 	background-color: #fff;
 
@@ -36,13 +36,11 @@
 }
 
 .success {
-	background-color: lightgreen;
+	background-color: #499660;
 }
 
 .fail {
-	color: #fff;
-
-	background-color: lightcoral;
+	background-color: #db504a;
 }
 
 /* Section */
@@ -54,7 +52,8 @@
 	min-height: 100vh;
 	width: 100%;
 
-	background-color: #3f3db7;
+	/* background-color: #1b3723; */
+	background-color: #499660;
 }
 
 /* Left */
@@ -90,9 +89,9 @@
 }
 
 .social-icon:hover {
-	border-color: #007aff;
+	border-color: #377048;
 
-	background-color: #007aff;
+	background-color: #377048;
 }
 
 /* Quick Actions */
@@ -249,7 +248,7 @@
 	color: #fff;
 	font-size: 1rem;
 
-	background-color: #3f3db7;
+	background-color: #499660;
 
 	transition: 0.4s ease-out;
 
@@ -257,7 +256,7 @@
 }
 
 .submit:hover {
-	background-color: #353499;
+	background-color: #377048;
 }
 
 /* Small Text Message */
@@ -289,8 +288,6 @@
 	/* Section */
 	.contact {
 		padding-bottom: 3rem;
-
-		height: 100vh;
 
 		display: flex;
 		align-items: stretch;

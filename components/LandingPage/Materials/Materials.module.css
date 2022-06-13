@@ -24,7 +24,9 @@
 	height: 50vh;
 	width: 100%;
 
-	background-color: rgb(2, 2, 37);
+	color: #000;
+
+	background-color: #f1f8f3;
 
 	overflow: hidden;
 
@@ -60,7 +62,7 @@
 
 	max-height: 30%;
 
-	color: #fff;
+	/* color: #fff; */
 	text-align: center;
 }
 

@@ -15,7 +15,11 @@
 .title {
 	margin-top: 4rem;
 
-	font-size: 3.25rem;
+	font-size: 2.7rem;
+}
+
+.hero > p {
+	color: #838383;
 }
 
 .img-container,
@@ -48,7 +52,7 @@
 	color: #fff;
 	text-align: center;
 
-	background-color: blue;
+	background-color: #499660;
 
 	transition: 0.4s ease-out;
 
@@ -56,7 +60,7 @@
 }
 
 .button:hover {
-	background-color: rgb(6, 6, 87);
+	background-color: #377048;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
@@ -68,6 +72,7 @@
 
 	.title {
 		margin-top: 6.5rem;
+		margin-bottom: 2rem;
 
 		width: 60%;
 
@@ -119,6 +124,7 @@
 
 	.title {
 		margin-top: 6.5rem;
+		margin-bottom: 2.5rem;
 
 		width: 60%;
 
