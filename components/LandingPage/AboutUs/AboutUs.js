@@ -3,18 +3,22 @@ import styles from "@/components/LandingPage/AboutUs/AboutUs.module.css";
 const values = [
 	{
 		name: "Paper-free",
+		img: "/images/about/values/paper-free.svg",
 		description: "Δεν χρειαζόμαστε χαρτί - το ίδιο κι εσύ!",
 	},
 	{
 		name: "Speed",
+		img: "/images/about/values/speed.svg",
 		description: "Εκτιμούμε τον χρόνο σου, είμαστε γρήγοροι",
 	},
 	{
 		name: "Details Matter",
+		img: "/images/about/values/details.svg",
 		description: "Δίνουμε σημασία στην κάθε λεπτομέρεια",
 	},
 	{
 		name: "Support",
+		img: "/images/about/values/support.svg",
 		description: "Σε στηρίζουμε",
 	},
 ];
@@ -46,10 +50,7 @@ const AboutUs = () => {
 			<div className={styles["values-container"]}>
 				{values.map((value) => (
 					<div className={styles.value} key={value.name}>
-						<img
-							src={`/images/about/values/${value.name}.svg`}
-							alt={value.name}
-						/>
+						<img src={value.img} alt={value.name} />
 						<div className={styles.text}>
 							<h2>{value.name}</h2>
 							<p>{value.description}</p>
