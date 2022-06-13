@@ -72,8 +72,7 @@
 	}
 
 	.values-container {
-		margin: unset;
-		margin-top: 3.5rem;
+		margin: 3.5rem 0;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -100,7 +99,7 @@
 	}
 
 	.values-container {
-		margin-top: 3.5rem;
+		margin: 3.5rem 0;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
