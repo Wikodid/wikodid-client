@@ -162,7 +162,7 @@ const Materials = () => {
 				</p>
 				<p>
 					Η Wikodid σου δίνει την ευκαιρία να παρουσιάσεις τα προϊόντα της
-					επιχείρισής σου με προσαρμόσιμο και personalized τρόπο!
+					επιχείρησής σου με προσαρμόσιμο και personalized τρόπο!
 				</p>
 
 				<div className={styles["material-swatches"]}>
