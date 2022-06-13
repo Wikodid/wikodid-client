@@ -3,22 +3,22 @@ import styles from "@/components/LandingPage/AboutUs/AboutUs.module.css";
 const values = [
 	{
 		name: "Paper-free",
-		img: "/images/about/values/paper-free.svg",
+		img: "/images/about/values/paper-free.png",
 		description: "Δεν χρειαζόμαστε χαρτί - το ίδιο κι εσύ!",
 	},
 	{
 		name: "Speed",
-		img: "/images/about/values/speed.svg",
+		img: "/images/about/values/speed.png",
 		description: "Εκτιμούμε τον χρόνο σου, είμαστε γρήγοροι",
 	},
 	{
 		name: "Details Matter",
-		img: "/images/about/values/details.svg",
+		img: "/images/about/values/details.png",
 		description: "Δίνουμε σημασία στην κάθε λεπτομέρεια",
 	},
 	{
 		name: "Support",
-		img: "/images/about/values/support.svg",
+		img: "/images/about/values/support.png",
 		description: "Σε στηρίζουμε",
 	},
 ];
