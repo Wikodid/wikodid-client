@@ -1,6 +1,21 @@
 import Link from "next/link";
 import styles from "@/components/LandingPage/Hero/Hero.module.css";
 
+const menus = [
+	{
+		name: "Tuk Tuk",
+		url: "https://wikodid.gr/tuktuk",
+	},
+	{
+		name: "Hippy Hippo",
+		url: "https://wikodid.gr/qr-menus/hippyhippo",
+	},
+	{
+		name: "Συντριβάνι",
+		url: "https://wikodid.gr/sintrivani",
+	},
+];
+
 const Hero = () => {
 	return (
 		<section className={styles.hero}>
@@ -10,9 +25,20 @@ const Hero = () => {
 				δυνατότητες
 			</p>
 
-			<Link href='#about'>
-				<a className={styles.button}>Μάθετε περισσότερα</a>
-			</Link>
+			<div className={styles.dropdown}>
+				<p> Δες τα μενού των πελατών μας </p>
+				<ul>
+					{menus.map((menu) => (
+						<li key={menu.name}>
+							<Link href={menu.url}>
+								<a className={styles.menu} target='_blank'>
+									{menu.name}
+								</a>
+							</Link>
+						</li>
+					))}
+				</ul>
+			</div>
 
 			<div className={styles["img-container"]}>
 				<img
