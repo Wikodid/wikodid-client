@@ -5,7 +5,7 @@ import styles from "@/components/LandingPage/Pricing/Pricing.module.css";
 const pricingPlans = [
 	{
 		title: "Lite",
-		description: "Για όσους βρίσκονται στο ξεκίνημα",
+		description: "Ευέλικτο",
 		price: {
 			monthly: "2.99",
 			yearly: "89.99",
@@ -48,7 +48,7 @@ const pricingPlans = [
 	},
 	{
 		title: "Standard",
-		description: "Ιδανικό για επαγγελματίες",
+		description: "Ευέλικτο και Εξατομικευμένο",
 		tag: "popular",
 		price: {
 			monthly: "5.99",
@@ -99,7 +99,7 @@ const pricingPlans = [
 	},
 	{
 		title: "Pro",
-		description: "Για σοβαρές επιχειρήσεις",
+		description: "Λεπτομερές, Ευέλικτο και Εξατομικευμένο",
 		price: {
 			monthly: "12.99",
 			yearly: "149.99",
