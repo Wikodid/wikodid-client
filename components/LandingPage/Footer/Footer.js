@@ -8,23 +8,23 @@ const linkList = [
 		links: [
 			{
 				title: "About",
-				href: "#about",
+				href: "/#about",
 			},
 			{
 				title: "Υλικά",
-				href: "#materials",
+				href: "/#materials",
 			},
 			{
 				title: "Themes",
-				href: "#themes",
+				href: "/#themes",
 			},
 			{
 				title: "Pricing",
-				href: "#pricing",
+				href: "/#pricing",
 			},
 			{
 				title: "Επικοινωνία",
-				href: "#contact",
+				href: "/#contact",
 			},
 			{
 				title: "Terms of Service",
