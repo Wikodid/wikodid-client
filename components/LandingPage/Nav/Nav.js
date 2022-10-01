@@ -1,27 +1,27 @@
 import { useRef } from "react";
 
-import Link from "next/link";
 import styles from "@/components/LandingPage/Nav/Nav.module.css";
+import Link from "next/link";
 
 const links = [
 	{
-		id: "#",
+		id: "/",
 		name: "Αρχική",
 	},
 	{
-		id: "#about",
+		id: "/#about",
 		name: "About us",
 	},
 	{
-		id: "#materials",
+		id: "/#materials",
 		name: "Υπηρεσίες",
 	},
 	{
-		id: "#pricing",
+		id: "/#pricing",
 		name: "Pricing",
 	},
 	{
-		id: "#contact",
+		id: "/#contact",
 		name: "Επικοινωνία",
 		cssClass: "contact-btn",
 	},
@@ -65,7 +65,7 @@ const Nav = () => {
 								d='M107 0H146V39H107V0ZM116 9H137V30H116V9Z'
 								fill='black'
 							/>
-							<path d='M132 14H121V25H132V14Z' fill='black' />
+							<path d='M132 14H121V25H132V14Z' fill='#91CAA2' />
 							<path
 								d='M77 0H68V39H77L84 29L90 39H101L90 21L101 5H90L77 23.5V0Z'
 								fill='black'

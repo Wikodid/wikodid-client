@@ -26,30 +26,12 @@ const linkList = [
 				title: "Επικοινωνία",
 				href: "#contact",
 			},
+			{
+				title: "Terms of Service",
+				href: "/terms-of-service",
+			},
 		],
 	},
-	// {
-	// 	title: "More",
-	// 	links: [
-	// 		{
-	// 			title: "Coming Soon",
-	// 			href: "#",
-	// 		},
-	// 	],
-	// },
-	// {
-	// 	title: "Legal",
-	// 	links: [
-	// 		{
-	// 			title: "Terms of Services",
-	// 			href: "#",
-	// 		},
-	// 		{
-	// 			title: "Privacy Policy",
-	// 			href: "#",
-	// 		},
-	// 	],
-	// },
 ];
 
 const Footer = () => {

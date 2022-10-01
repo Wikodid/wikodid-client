@@ -21,7 +21,7 @@ const Hero = () => {
 		<section className={styles.hero}>
 			<h1 className={styles.title}>Zero Waste Digital Menus</h1>
 			<p>
-				Zero footprint ψηφιακά μενού με ξεχωριστό στυλ και απεριόριστες
+				Zero footprint QR code και NFC μενού με ξεχωριστό στυλ και απεριόριστες
 				δυνατότητες
 			</p>
 

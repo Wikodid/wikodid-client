@@ -136,9 +136,9 @@
 }
 
 .plan-highlighted {
-	color: #fff;
+	color: #000;
 
-	background-color: #499660;
+	background-color: #91caa2;
 }
 
 .plan .tag {
@@ -153,7 +153,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 
-	background-color: #377048;
+	background-color: rgb(74, 150, 97);
 }
 
 .plan h1 {
@@ -190,16 +190,17 @@ plan-highlighted .deal s {
 	color: #00819d;
 }
 
-.plan-highlighted .price .amount span {
+/* .plan-highlighted .price .amount span {
 	color: #23d6fd;
-}
+} */
 
 .plan .price > span:not(.amount) {
 	color: #c0aaaa;
 }
-.plan-highlighted .price > span:not(.amount) {
+
+/* .plan-highlighted .price > span:not(.amount) {
 	color: #e5c8c8;
-}
+} */
 
 .plan .feature-list {
 	margin-top: 2rem;
@@ -222,15 +223,19 @@ plan-highlighted .deal s {
 	pointer-events: none;
 }
 
+.plan-highlighted .feature-list li .tick path {
+	fill: rgb(74, 150, 97) !important;
+}
+
 .plan .feature-list p {
 	margin-bottom: 0;
 
 	color: #878787;
 }
 
-.plan-highlighted .feature-list p {
+/* .plan-highlighted .feature-list p {
 	color: #d2d2d2;
-}
+} */
 
 .comparison {
 	margin: 1.75rem 0;

@@ -81,13 +81,13 @@
 
 	color: #fff;
 
-	background-color: #499660;
+	background-color: #91caa2;
 
 	transition: 0.4s ease-out;
 }
 
 .contact-btn:hover {
-	background-color: #377048;
+	background-color: #5aaf73;
 }
 
 .burger {
