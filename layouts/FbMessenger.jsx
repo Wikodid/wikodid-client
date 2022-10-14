@@ -5,7 +5,7 @@ const FbMessenger = ({ children }) => (
 		{children}
 
 		<MessengerCustomerChat
-			pageId='Prjr44o47zxlf'
+			pageId='166364938207886'
 			appId='1128654474421430'
 			className='fb-messenger-chat-comp'
 		/>
