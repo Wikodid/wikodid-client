@@ -4,11 +4,11 @@ import styles from "@/components/LandingPage/Pricing/Pricing.module.css";
 
 const pricingPlans = [
 	{
-		title: "Lite",
-		description: "Ευέλικτο",
+		title: "Plain",
+		description: "Απλό",
 		price: {
 			monthly: "2.99",
-			yearly: "89.99",
+			yearly: "59.99",
 			deal: {
 				previous: {
 					monthly: "4.99",
@@ -36,13 +36,8 @@ const pricingPlans = [
 			},
 			{
 				id: 3,
-				title: "2 γλώσσες",
-				tooltip: "Διαθέσιμος κατάλογος σε 2 γλώσσες της επιλογής σου",
-			},
-			{
-				id: 4,
-				title: "Διαθέσιμα Themes: Plain",
-				tooltip: "Plain theme για την εμφάνιση του καταλόγου σου",
+				title: "1 γλώσσα",
+				tooltip: "Διαθέσιμος κατάλογος σε 1 γλώσσα της επιλογής σου",
 			},
 		],
 	},
@@ -86,14 +81,10 @@ const pricingPlans = [
 			{
 				id: 4,
 				title: "4 διορθώσεις μενού / χρόνο",
-				tooltip:
-					"Αλλαγές σε τιμή, φωτογραφία ή περιγραφή προϊόντος έως και 4 φορές τον χρόνο",
 			},
 			{
 				id: 5,
-				title: "Διαθέσιμα Themes: Plain, Styled",
-				tooltip:
-					"Επιλογή Plain ή Styled theme για την εμφάνιση του καταλόγου σου",
+				title: "Εξατομικευμένο φόντο",
 			},
 		],
 	},
@@ -147,13 +138,11 @@ const pricingPlans = [
 			},
 			{
 				id: 6,
-				title: "Διαθέσιμα Themes: Όλα",
-				tooltip:
-					"Επιλογή Plain, Styled ή Detailed theme για την εμφάνιση του καταλόγου σου",
+				title: "Εξατομικευμένο Φόντο",
 			},
 			{
 				id: 7,
-				title: "Συνεχής Υποστήριξη",
+				title: "Φωτογραφίες προϊόντων",
 			},
 		],
 	},
@@ -195,30 +184,14 @@ const Pricing = () => {
 								? `${styles.plan} ${styles["plan-highlighted"]}`
 								: styles.plan
 						}>
-						{plan.tag && <div className={styles.tag}>{plan.tag}</div>}
-
 						<h1>{plan.title}</h1>
 						<p>{plan.description}</p>
-
-						{plan.price.deal && (
-							<span className={styles.deal}>
-								<s>
-									€
-									{/* {switchOn
-										? plan.price.deal.previous.yearly
-										: plan.price.deal.previous.monthly} */}
-									{plan.price.deal.previous.yearly}
-								</s>
-							</span>
-						)}
 
 						<div className={styles.price}>
 							<span className={styles.amount}>
 								<span>€</span>
-								{/* {switchOn ? plan.price.yearly : plan.price.monthly} */}
 								{plan.price.yearly}
 							</span>
-							{/* <span>/ {switchOn ? "year" : "month"}</span> */}
 							<span>/ χρόνο</span>
 						</div>
 
